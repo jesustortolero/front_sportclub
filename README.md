@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+Proyecto de Filtrado de Usuarios con React y Axios
+Este proyecto es una aplicación web simple que utiliza React para el frontend y Axios para realizar llamadas al backend. Permite filtrar usuarios en una tabla y mostrarlos en función de los criterios de filtro especificados.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Requisitos
+Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo e instalarlo desde nodejs.org.
 
-## Available Scripts
+Configuración
+Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
 
-In the project directory, you can run:
+Clona el repositorio:
 
-### `npm start`
+bash
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+git clone <URL del repositorio>
+Instala las dependencias:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Navega a la carpeta del proyecto y ejecuta el siguiente comando para instalar las dependencias necesarias:
 
-### `npm test`
+bash
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+cd nombre-del-proyecto
+npm install
+Configura la URL del Backend:
 
-### `npm run build`
+Abre el archivo App.js en la carpeta src y asegúrate de que la URL del backend esté configurada correctamente en la variable url.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+javascript
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Recuerda que al usar Tailwinds tienes que Genera un archivo de configuración, para ello ejecuta el siguiente comando:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+npx tailwindcss init -p
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Ejecuta la aplicación:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Una vez que hayas configurado la URL del backend, puedes ejecutar la aplicación con el siguiente comando:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+bash
 
-## Learn More
+npm start
+Esto iniciará la aplicación React en modo de desarrollo y se abrirá en tu navegador predeterminado. Si se utiliza un puerto diferente en el backend, asegúrate de configurarlo en la variable url.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Uso
+Accede a la aplicación en tu navegador.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Utiliza el formulario de filtro en la parte superior de la página para especificar tus criterios de filtro. Puedes seleccionar una fecha de inicio, una fecha de fin y marcar la casilla "Es de GBA" si es necesario.
 
-### Code Splitting
+Haz clic en el botón "Filtrar" para enviar la solicitud al backend y obtener los resultados filtrados.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Los usuarios que cumplan con los criterios de filtro se mostrarán en la tabla debajo del formulario.
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Tecnologías Utilizadas
+React
+Axios
