@@ -1,55 +1,49 @@
-Proyecto de Filtrado de Usuarios con React y Axios
-Este proyecto es una aplicación web simple que utiliza React para el frontend y Axios para realizar llamadas al backend. Permite filtrar usuarios en una tabla y mostrarlos en función de los criterios de filtro especificados.
+# GBA Filter.
+User Filtering Project with React and Axios
+This project is a simple web application that uses React for the frontend and Axios for making backend calls. It allows you to filter users in a table and display them based on specified filter criteria.
 
-Requisitos
-Asegúrate de tener instalado Node.js en tu sistema. Puedes descargarlo e instalarlo desde nodejs.org.
+## Requirements
+Make sure you have Node.js installed on your system. You can download and install it from [nodejs.org](https://nodejs.org/).
 
-Configuración
-Sigue estos pasos para configurar y ejecutar el proyecto en tu entorno local:
+## Configuration
+Follow these steps to set up and run the project on your local environment:
 
-Clona el repositorio:
+1. ### Clone the repository:
+   
+   ```bash
+   git clone <repository URL>
+    ```
 
-bash
+1. ### Install dependencies:
 
-git clone <URL del repositorio>
-Instala las dependencias:
+    Navigate to the project folder and execute the following command to install the necessary dependencies:
+    ```bash
+    cd nombre-del-proyecto
 
-Navega a la carpeta del proyecto y ejecuta el siguiente comando para instalar las dependencias necesarias:
+    npm install
+    ```
+1. ### Configure the Backend URL in the .env File:
 
-bash
+    In the project's root directory, you'll need to create a .env file. Open it and set the backend URL environment variable as follows:
 
-cd nombre-del-proyecto
-npm install
-Configura la URL del Backend:
+    ``` 
+    REACT_APP_BACKEND_URL=http://your-backend-url.com
+    ```
 
-Abre el archivo App.js en la carpeta src y asegúrate de que la URL del backend esté configurada correctamente en la variable url.
+    > [!NOTE]
+    > For guidance on setting up your .env file correctly, refer to the .env.example file.
 
-javascript
+## Run the application:
 
-Recuerda que al usar Tailwinds tienes que Genera un archivo de configuración, para ello ejecuta el siguiente comando:
+Once you have configured the backend URL, you can run the application with the following command:
 
-npx tailwindcss init -p
-
-
-
-Ejecuta la aplicación:
-
-Una vez que hayas configurado la URL del backend, puedes ejecutar la aplicación con el siguiente comando:
-
-bash
-
+```bash
 npm start
-Esto iniciará la aplicación React en modo de desarrollo y se abrirá en tu navegador predeterminado. Si se utiliza un puerto diferente en el backend, asegúrate de configurarlo en la variable url.
+```
 
-Uso
-Accede a la aplicación en tu navegador.
+This will start the React application in development mode and open it in your default web browser.
 
-Utiliza el formulario de filtro en la parte superior de la página para especificar tus criterios de filtro. Puedes seleccionar una fecha de inicio, una fecha de fin y marcar la casilla "Es de GBA" si es necesario.
-
-Haz clic en el botón "Filtrar" para enviar la solicitud al backend y obtener los resultados filtrados.
-
-Los usuarios que cumplan con los criterios de filtro se mostrarán en la tabla debajo del formulario.
-
-Tecnologías Utilizadas
-React
-Axios
+## Tecnologías Utilizadas
+- ### React
+- ### Axios
+- ### Tailwind
