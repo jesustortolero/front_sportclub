@@ -1,14 +1,13 @@
-import React from 'react';
-import './Loader.css'; // Importa el archivo CSS personalizado
+import './Loader.css'
 
 const Loader = () => {
   return (
-    <div className="flex justify-center items-center h-screen max-h-80">
-      <div className="loader-container">
-        <div className="loader ease-linear rounded-full border-t-4 border-yellow-500 h-12 w-12 animate-spin"></div>
+    <div className="custom-loader">
+      <div className="custom-loader__container">
+        <div className="custom-loader__spinner animate-spin"></div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Loader;
+export default Loader

@@ -1,0 +1,15 @@
+.error-message{
+    @apply text-center bg-white shadow-lg rounded-lg p-6 my-10
+}
+
+.error-message__img{
+    @apply mx-auto my-4 max-h-48
+}
+
+.error-message__title{
+    @apply text-red-500 text-2xl font-semibold mb-4
+}
+
+.error-message__text{
+    @apply text-red-500 text-lg
+}

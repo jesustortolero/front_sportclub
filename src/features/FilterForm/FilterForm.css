@@ -1,0 +1,28 @@
+.filter-form {
+  @apply p-4 border rounded shadow-lg mt-10 bg-gray-200;
+}
+
+.filter-form__group {
+  @apply mb-4;
+}
+
+.filter-form__label {
+  @apply block font-semibold;
+}
+
+.filter-form__input {
+  @apply border rounded px-2 py-1 w-full;
+}
+
+.filter-form__checkbox {
+  @apply mr-2;
+}
+
+.filter-form__btn {
+  @apply bg-yellow-400 hover:bg-yellow-300 text-black font-semibold py-2 px-4 rounded;
+}
+
+.filter-form__btn--margin-right {
+  @apply ml-4; /* Add your desired spacing */
+}
+  

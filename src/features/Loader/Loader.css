@@ -1,14 +1,19 @@
-/* Loader.css */
-.loader-container {
-    animation: scale 1.5s ease-in-out infinite;
+.custom-loader {
+  @apply flex justify-center items-center h-screen max-h-80
+}
+.custom-loader__container {
+  animation: scale 1.5s ease-in-out infinite;
+}
+
+.custom-loader__spinner{
+  @apply ease-linear rounded-full border-t-4 border-yellow-500  h-12 w-12
+}
+
+@keyframes scale {
+  0%, 100% {
+    transform: scale(0);
   }
-  
-  @keyframes scale {
-    0%, 100% {
-      transform: scale(0);
-    }
-    50% {
-      transform: scale(1);
-    }
+  50% {
+    transform: scale(1);
   }
-  
+}

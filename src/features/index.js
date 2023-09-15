@@ -1,0 +1,7 @@
+export{ default as Header} from './Header'
+export{ default as Footer} from './Footer/Footer'
+export{ default as Table} from './Table/Table'
+export{ default as ErrorMessage} from './messages/ErrorMessage/ErrorMessage'
+export{ default as FilterForm} from './FilterForm/FilterForm'
+export{ default as Loader} from './Loader/Loader'
+export{ default as InstructionMessage} from './InstructionMessage'

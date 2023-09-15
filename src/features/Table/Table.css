@@ -1,0 +1,12 @@
+.table{
+    @apply w-full table-auto my-10 
+}
+.table__head{
+    @apply bg-zinc-900 text-yellow-400
+}
+.table__title{
+    @apply py-2
+}
+.table__title--right{
+    @apply pr-4
+}

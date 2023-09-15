@@ -1,0 +1,12 @@
+.footer{
+    @apply bg-black text-white py-4 text-center py-10
+}
+.footer__container{
+    @apply container mx-auto
+}
+.footer__divider{
+    @apply border-gray-600 my-4
+}
+.footer__copyright{
+    @apply text-gray-400
+}

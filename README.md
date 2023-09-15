@@ -18,7 +18,7 @@ Follow these steps to set up and run the project on your local environment:
 
     Navigate to the project folder and execute the following command to install the necessary dependencies:
     ```bash
-    cd nombre-del-proyecto
+    cd <project-name>
 
     npm install
     ```

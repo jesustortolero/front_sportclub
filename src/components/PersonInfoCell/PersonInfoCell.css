@@ -1,0 +1,11 @@
+.person-cell{
+    @apply p-4
+}
+
+.person-cell__item{
+    @apply pb-1
+}
+
+.person-cell__label{
+    @apply font-bold
+}
